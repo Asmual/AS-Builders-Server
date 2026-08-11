@@ -8,11 +8,12 @@ const app = express();
 
 app.use(cors());
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 app.get("/", (_req, res) => {
-  res.json({
+  res.status(200).json({
     success: true,
-    message: "AS Builders API is running successfully",
+    message: "AS Builders API is running",
   });
 });
 
