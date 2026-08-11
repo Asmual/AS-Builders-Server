@@ -5,3 +5,8 @@ git commit -m "first commit"
 git branch -M main
 git remote add origin https://github.com/Asmual/AS-Builders-Server.git
 git push -u origin main
+
+
+git add .
+git commit -m "chore: configure Prisma and Neon PostgreSQL database"
+git push
