@@ -8,5 +8,5 @@ git push -u origin main
 
 
 git add .
-git commit -m "chore: configure Prisma and Neon PostgreSQL database"
+git commit -m "feat: set up Prisma database schema and PostgreSQL migrations"
 git push
