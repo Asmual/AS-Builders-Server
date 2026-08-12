@@ -1,7 +1,7 @@
 import app from "./app.js";
 import prisma from "./lib/prisma.js";
 
-const PORT = process.env.PORT || 5000;
+const PORT = Number(process.env.PORT) || 5000;
 
 const startServer = async () => {
   try {
@@ -9,7 +9,7 @@ const startServer = async () => {
 
     console.log("Database connected successfully");
 
-    app.listen(PORT, () => {
+    app.listen(PORT, "0.0.0.0", () => {
       console.log(`AS Builders server is running on port ${PORT}`);
     });
   } catch (error) {

@@ -1,6 +1,7 @@
 import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
+import routes from "./routes/index.js";
 
 dotenv.config();
 
@@ -16,5 +17,7 @@ app.get("/", (_req, res) => {
     message: "AS Builders API is running",
   });
 });
+
+app.use("/api", routes);
 
 export default app;
