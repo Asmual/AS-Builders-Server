@@ -8,5 +8,5 @@ git push -u origin main
 
 
 git add .
-git commit -m "feat: set up Prisma database schema and PostgreSQL migrations"
+git commit -m "fix: configure Prisma ESM and production server startup"
 git push
