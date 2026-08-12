@@ -12,6 +12,7 @@ const startServer = async () => {
     app.listen(PORT, "0.0.0.0", () => {
       console.log(`AS Builders server is running on port ${PORT}`);
     });
+    
   } catch (error) {
     console.error("Database connection failed:", error);
     process.exit(1);
