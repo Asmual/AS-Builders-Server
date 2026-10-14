@@ -3,3 +3,9 @@ dist
 /src/generated/prisma
 
 config.bat
+
+.vscode/
+api.js
+director.js
+.env
+.env.local
